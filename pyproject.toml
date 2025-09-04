@@ -25,7 +25,7 @@ requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.ruff]
-line-length = 44
+line-length = 74
 
 [tool.ruff.format]
 docstring-code-format = true
