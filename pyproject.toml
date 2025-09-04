@@ -1,0 +1,31 @@
+[project]
+name = "knappy"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0.0"
+dependencies = [
+    "textual (>=6.1.0,<7.0.0)",
+    "pydantic (>=2.11.7,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "knappy", from = "src"}]
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.12.11"
+pytest = "^8.4.2"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 44
+
+[tool.ruff.format]
+docstring-code-format = true
