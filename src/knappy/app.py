@@ -17,5 +17,7 @@ class Knapp(App):
 
 
 app = Knapp()
-if __name__ == "__main__":
+
+
+def main() -> None:
     app.run()
